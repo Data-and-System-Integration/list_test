@@ -8,28 +8,31 @@ import java.util.*;
 public class list_object implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
-	private java.util.List<java.lang.Long> list1 = new ArrayList<java.lang.Long>();
 	private java.util.List<java.lang.Long> list2 = new ArrayList<java.lang.Long>();
-	
+
+	private java.util.List<java.lang.Long> list1;
+
 	public java.util.List<java.lang.Long> getlist1() {
 		return this.list1;
 	}
 
-	public void setList1(
-			java.lang.Long val) {
-		this.list1.add(val);
-	}
-	
 	public java.util.List<java.lang.Long> getlist2() {
 		return this.list2;
 	}
 
-	public void setList2(
-			java.lang.Long val) {
+	public void setList2(java.lang.Long val) {
+		this.list2.add(val);
+	}
+
+
+	public void setList1(java.lang.Long val) {
 		this.list1.add(val);
 	}
 
-	public list_object() {
+	public list_object(java.util.List<java.lang.Long> list2,
+			java.util.List<java.lang.Long> list1) {
+		this.list2 = list2;
+		this.list1 = list1;
 	}
 
 }
