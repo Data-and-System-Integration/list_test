@@ -1,13 +1,57 @@
 <scenario>
-  <name>test_case</name>
+  <name>test_case.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
-  <fixtures/>
+  <fixtures>
+    <fact-data>
+      <type>list_object</type>
+      <fieldData>
+        <field-data>
+          <name>list1</name>
+          <collectionFieldList>
+            <field-data>
+              <name>list1</name>
+              <value>1000000</value>
+              <nature>4</nature>
+            </field-data>
+            <field-data>
+              <name>list1</name>
+              <value>3000000</value>
+              <nature>4</nature>
+            </field-data>
+            <field-data>
+              <name>list1</name>
+              <value>7000000</value>
+              <nature>4</nature>
+            </field-data>
+          </collectionFieldList>
+        </field-data>
+      </fieldData>
+      <name>a</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <execution-trace/>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>list2</fieldName>
+          <expected></expected>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>list_object</name>
+      <anonymous>true</anonymous>
+    </expect-fact>
+  </fixtures>
+  <lastRunResult>2020-08-04 16:20:57.455 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.shubhi.list_test</packageName>
   <imports>
     <imports/>
   </imports>
-  <ksessions/>
+  <ksessions>
+    <string>defaultKieSession</string>
+  </ksessions>
 </scenario>
