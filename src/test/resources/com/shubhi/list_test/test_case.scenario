@@ -44,7 +44,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2020-08-04 16:20:57.455 UTC</lastRunResult>
+  <lastRunResult>2020-08-04 16:27:14.83 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.shubhi.list_test</packageName>
