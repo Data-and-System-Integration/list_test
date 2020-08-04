@@ -10,7 +10,7 @@ public class list_object implements java.io.Serializable {
 	static final long serialVersionUID = 1L;
 	private java.util.List<java.lang.Long> list2 = new ArrayList<java.lang.Long>();
 
-	private java.util.List<java.lang.Long> list1;
+	private java.util.List<java.lang.Long> list1 = new ArrayList<java.lang.Long>();
 
 	public java.util.List<java.lang.Long> getlist1() {
 		return this.list1;
